@@ -411,14 +411,13 @@ class App extends Component {
         <section className="App__content">
 
           <Compose />
-          
-          {
-            posts.map( post => (
-              <Post key={ post.id }
-                    text={ post.text}
-                    date={ post.date }
-                    id={ post.id }
-                    updatePostFn={ this.updatePost } />
+        
+          { posts.map( post => (
+            <Post key={ post.id }
+                  text={ post.text}
+                  date={ post.date }
+                  id={ post.id }
+                  updatePostFn={ this.updatePost } />
             ))
           }
 
